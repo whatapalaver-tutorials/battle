@@ -9,5 +9,15 @@ feature 'View hit points' do
     sign_in_and_play
     expect(page).to have_content 'Ants: 60HP'
   end
+  
+  # User story 6
+  # As Player 1,
+  # So I can see how close I am to losing,
+  # I want to see my own hit points
+
+  scenario 'see player 1 hit points' do
+    sign_in_and_play
+    expect(page).to have_content 'Enders: 60HP'
+  end
 end
 
