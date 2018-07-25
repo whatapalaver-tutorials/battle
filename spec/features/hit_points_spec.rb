@@ -10,3 +10,4 @@ feature 'View hit points' do
     expect(page).to have_content 'Ants: 60HP'
   end
 end
+
