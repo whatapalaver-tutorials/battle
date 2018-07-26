@@ -7,6 +7,7 @@
 feature 'Attack reduces hit points' do
   scenario 'see player 2 hit points drop by 10' do
     sign_in_and_play
+    allow(Kernel).to receive(:rand).and_return 10
     click_button 'Attack'
     expect(page).not_to have_content 'Enders: 50HP'
     expect(page).to have_content 'Ants: 50HP'
@@ -18,6 +19,7 @@ feature 'Attack reduces hit points' do
   # I want Player 2 to attack me, and I want to get a confirmation
   scenario 'see confirmation that player 2 attacks player 1' do
     sign_in_and_play
+    allow(Kernel).to receive(:rand).and_return 10
     click_button 'Attack'
     click_button 'OK'
     click_button 'Attack'
@@ -30,6 +32,7 @@ feature 'Attack reduces hit points' do
   # I want Player 2 to attack me, and I want to get a confirmation
   scenario 'see player 1 hit points drop by 10' do
     sign_in_and_play
+    allow(Kernel).to receive(:rand).and_return 10
     click_button 'Attack'
     click_button 'OK'
     click_button 'Attack'

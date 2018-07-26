@@ -18,6 +18,7 @@ describe Player do
 
   describe '#receive_damage' do
     it 'reduces the players hit point total' do
+      allow(Kernel).to receive(:rand).and_return 10
       expect { enders.receive_damage }.to change { enders.hit_points }.by(-10)
     end
   end

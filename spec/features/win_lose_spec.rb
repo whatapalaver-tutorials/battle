@@ -6,6 +6,7 @@
 feature 'Declare loser' do
   scenario 'see confirmation that player 2 loses' do
     sign_in_and_play
+    allow(Kernel).to receive(:rand).and_return 10
     10.times { attack_sequence }
     click_button 'Attack'
     expect(page).to have_content 'Hard luck: Ants'
