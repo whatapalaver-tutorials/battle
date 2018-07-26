@@ -32,6 +32,15 @@ class Game
     losing_players.any?
   end
 
+  def loser
+    losing_players.first
+  end
+
+  def winner
+    opponent(loser)
+  end
+
+
   private
   
   def opponent(the_player)

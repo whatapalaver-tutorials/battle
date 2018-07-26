@@ -6,7 +6,8 @@
 feature 'Declare loser' do
   scenario 'see confirmation that player 2 loses' do
     sign_in_and_play
-    11.times { attack_sequence }
-    expect(page).to have_content 'Ants loses the battle'
+    10.times { attack_sequence }
+    click_button 'Attack'
+    expect(page).to have_content 'Hard luck: Ants'
   end
 end
