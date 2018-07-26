@@ -24,7 +24,7 @@ feature 'Attack reduces hit points' do
     expect(page).to have_content 'Ants attacks Enders'
   end
 
-  # User story 7
+  # User story 8
   # As Player 1,
   # So I can lose a game of Battle,
   # I want Player 2 to attack me, and I want to get a confirmation
