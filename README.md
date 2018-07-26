@@ -22,7 +22,8 @@ First player always wins!!
 Now its time to add some actual gameplay:
 
 - [x] User story 10 - I want all Attacks to deal a random amount of damage  
-- [ ] User story 11 - I want to play a Computerised opponent  
+- [x] User story 11 - I want to play a Computerised opponent 
+<span style="color:red">I am not happy with this implementation. I wanted to call a POST method without user interaction but it seems this is not possible without javascript. Instead I have amended the /attack form so that it renders differently depending on whether the next user is teh computer or not. The submit then directs to a different POST page. It misses the switch_user method so I am calling that in the view - I don't like that, it violates the separation of control and view.</span>
 - [ ] User story 12 - I want to choose from a range of attacks I could make  
 - [ ] User story 13 - I want some of my attacks to Paralyse an opponent (chance of losing their next attack)  
 - [ ] User story 14 - I want one of my attacks to have a chance of Poisoning my Opponent (Opponent takes a small random amount of damage at the beginning of their turn)
