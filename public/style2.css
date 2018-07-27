@@ -1,6 +1,6 @@
 body {
   background-color: lightblue;
-  background-image: url("./images/battle.png");
+  background-image: url("./images/death.png");
   background-repeat: no-repeat, repeat;
   background-position: center top;
 }
@@ -26,6 +26,7 @@ p {
   font-family: verdana;
   font-size: 20px;
   text-align: center;
+  color: ghostwhite
 }
 
 form {

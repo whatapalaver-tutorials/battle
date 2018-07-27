@@ -12,8 +12,8 @@
 <% end %>
 </h2>
   
-<div><%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP</div>
-<div><%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP</div>
+<p><%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP</p>
+<p><%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP</p>
 
 <% if @game.next_player.name == 'Computer' %>
   <% @game.switch_turns %>
@@ -25,5 +25,6 @@
     <input type="submit" value="OK">
   </form>
 <% end %>
+
 </body>
 </html>
