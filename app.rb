@@ -5,6 +5,7 @@ require './lib/player'
 class Battle < Sinatra::Base
   enable :sessions 
   # keeps state during requests
+  # set :public_folder, 'public'
 
   before do
     @game = Game.instance
