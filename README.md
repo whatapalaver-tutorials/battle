@@ -37,4 +37,8 @@ Now its time to add some actual gameplay:
 - [ ] User story 14 - I want one of my attacks to have a chance of Poisoning my Opponent (Opponent takes a small random amount of damage at the beginning of their turn)
 - [ ] User story 15 - I want to make an attack that has a chance of sending my Opponent to Sleep (Opponent definitely misses next turn)
 - [ ] User story 16 - I want to have an attack that heals some of my Hit Points  
-- [ ] User story 17 - I want a sexy user interface
+- [x] User story 17 - I want a sexy user interface  
+
+*I'm not sure this can be entirely described as sexy but it's getting there.*
+*I'm pleased to have fathomed out how to link css files but now I have to remine myself how to do stuff with css.*
+

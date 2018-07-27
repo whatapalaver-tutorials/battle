@@ -5,11 +5,8 @@ body {
   background-position: center top;
 }
 
-div1 {
-  background-color: lightblue;
-  background-size: 100px 80px;
-  background-repeat: no-repeat, repeat;
-  background-position: center top;
+.game_play {
+  margin: auto;
 }
 
 h1 {
@@ -31,3 +28,16 @@ p {
 form {
   text-align: center;
   }
+
+  .radio-toolbar {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 4px 11px;
+    font-family: Verdana;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* .radio-toolbar input[type="radio"]:checked+label {
+    background-color: #bbb;
+  } */
