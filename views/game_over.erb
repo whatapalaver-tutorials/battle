@@ -4,12 +4,14 @@
 <link rel="stylesheet" type="text/css" href="/style2.css" />
 </head>
 <body>
-<div2>
-<h2><%= @game.winner.name %> wins! </h2> 
-<p>Hard luck: <%= @game.loser.name %></p>
-<form action="/">
-  <input type="submit" value="OK">
-</form>
-</div2>
+  <div class = "flex-container">
+    <div><h2><%= @game.winner.name %> wins! </h2> </div>
+    <div><p>Hard luck: <%= @game.loser.name %></p></div>
+    <div class="form">
+      <form action="/">
+        <p><input type="submit" value="OK"></p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

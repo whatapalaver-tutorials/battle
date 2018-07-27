@@ -4,24 +4,24 @@
 <link rel="stylesheet" type="text/css" href="/style.css" />
 </head>
 <body>
-<div class = "game_play">
-<h2><%= @game.player_1.name %> vs <%= @game.player_2.name %></h2>
+<div class = "flex-container">
+  <div><h2><%= @game.player_1.name %> vs <%= @game.player_2.name %></h2></div>
 
-<p><%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP</p>
-<p><%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP</p>
-<p><%= @game.current_turn.name %>'s turn</p>
+  <div><%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP</div>
+  <div><%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP</div>
+
+
+<div class="form">
+  <form action="/attack" method='post'>
+      <h2>Attack Type</h2>
+      <div class="radio-toolbar">
+        <input id="attack_type" name="attack_type" type="radio" value="normal_attack" /> Normal (5-10 HP)<br />
+        <input id="attack_type" name="attack_type" type="radio" value="sleep_attack" /> Sleep (0HP but turn missed)<br />
+        <input id="attack_type" name="attack_type" type="radio" value="paralysis" /> Paralysis (5HP with potential for missed turn)<br />
+        <p><%= @game.current_turn.name %>'s turn <input type="submit" value="Attack"></p>
+      </div>
+  </form>
 </div>
-
-<form action="/attack" method='post'>
-  <p>
-    <b>Attack Type</b><br />
-    <div class="radio-toolbar">
-      <input id="attack_type" name="attack_type" type="radio" value="normal_attack" /> Normal (5-10 HP)<br />
-      <input id="attack_type" name="attack_type" type="radio" value="sleep_attack" /> Sleep (0HP but turn missed)<br />
-      <input id="attack_type" name="attack_type" type="radio" value="paralysis" /> Paralysis (5HP with potential for missed turn)<br />
-      <input type="submit" value="Attack">
-    </div>
-  </p>
-</form>
+</div>
 </body>
 </html>
