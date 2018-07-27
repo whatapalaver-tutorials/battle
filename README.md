@@ -1,6 +1,6 @@
 Battle
 ====== 
-A web game built as part of the Makers Week 3 pairing challenges.
+A multiplayer web game built during Makers Week 3, using Ruby, Sinatra & Capybara.
 
 ## User Stories
 
@@ -29,6 +29,7 @@ Now its time to add some actual gameplay:
 *Instead I have amended the /attack form so that it renders differently depending on whether the next user is the computer or not.* 
 *The submit then directs to a different POST page. It misses the switch_user method so I am calling that in the view -*
 *I don't like that, it violates the separation of control and view.*
+[Modelling the flow](https://github.com/Whatapalaver/battle/blob/master/docs/thought_flow_1.jpg)
 
 - [ ] User story 12 - I want to choose from a range of attacks I could make  
 - [ ] User story 13 - I want some of my attacks to Paralyse an opponent (chance of losing their next attack)  
