@@ -28,8 +28,9 @@ Now its time to add some actual gameplay:
 *I wanted to call a POST method without user interaction but it seems this is not possible without javascript.*
 *Instead I have amended the /attack form so that it renders differently depending on whether the next user is the computer or not.* 
 *The submit then directs to a different POST page. It misses the switch_user method so I am calling that in the view -*
-*I don't like that, it violates the separation of control and view.*
-![Modelling the flow](https://github.com/Whatapalaver/battle/blob/master/docs/thought_flow_1.jpg)
+*I don't like that, it violates the separation of control and view.*  
+
+![Modelling the flow](https://github.com/Whatapalaver/battle/blob/master/docs/thought_flow_1.jpg)  
 
 - [ ] User story 12 - I want to choose from a range of attacks I could make  
 - [ ] User story 13 - I want some of my attacks to Paralyse an opponent (chance of losing their next attack)  
